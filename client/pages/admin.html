@@ -1,0 +1,31 @@
+<!-- admin.html -->
+<div class="jumbotron text-center" ng-controller="adminController">
+  <div class="page-title" style="background-image: url(images/page-title.jpg)">
+    <h1>
+      <font color="black"> Admin Page</font>
+
+    </h1>
+  </div>
+    <div ng-if="accessLevel != 2">
+        <h2>Access Denied</h2>
+    </div>
+    <div ng-if="accessLevel == 2">
+
+        <div class="input-group mb-3">
+            <label>Create a new Member</label>
+            <input type="text" class="form-control" placeholder="email" ng-model="newUser.email">
+            <select class="form-control" id="accessLevel" ng-model="newUser.accessLevel">
+                <option value="1" selected>Member</option>
+                <option value="2">Admin</option>
+            </select>
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" ng-click="create(newUser)">Add Member</button>
+            </div>
+            <h4>{{message}}</h4>
+            <label>Member Points</label>
+            <div class="input-group-append">
+                <button style="color:black" class="btn btn-outline-secondary" type="button"><a href="#points">Points</a></button>
+        </div>
+    </div>
+
+</div>

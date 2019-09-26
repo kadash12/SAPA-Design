@@ -1,0 +1,18 @@
+<!-- register.html -->
+<div class="jumbotron text-center">
+  <div class="page-title" style="background-image: url(images/page-title.jpg)">
+    <h1>
+      <font color="black"> Welcome</font>
+    </h1>
+  </div>
+  <div class="input-group mb-3">
+    <h4>Create password:</h4>
+    <input type="password" class="form-control" placeholder="password" ng-model="newUser.password">
+    <input type="password" class="form-control" placeholder="confirm password" ng-model="newUser.confirmPassword">
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary" type="button" ng-click="register(newUser)">Register</button>
+    </div>
+    {{message}}
+  </div>
+
+</div>
