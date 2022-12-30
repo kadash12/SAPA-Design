@@ -15,7 +15,7 @@
     "dotenv": "^7.0.0",
     "express": "^4.13.3",
     "jsonwebtoken": "^8.5.1",
-    "mocha": "^6.1.4",
+    "mocha": "^10.2.0",
     "mongoose": "^4.6.5",
     "morgan": "^1.6.1",
     "nodemailer": "^6.0.0",
